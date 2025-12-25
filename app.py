@@ -77,12 +77,15 @@ def load_css():
             color: #1A3C23 !important; /* Dark Green Text */
             caret-color: #D42426;
         }
-        /* Target labels specifically for Streamlit inputs */
-        .stTextInput label, .stTextInput p {
+        /* Reliable Streamlit Label Targeting */
+        label, 
+        .stTextInput label, 
+        div[data-testid="stWidgetLabel"] p,
+        div[data-testid="stMarkdownContainer"] p {
+            color: #FFFFFF !important;
+            font-size: 2rem !important;
             font-family: 'Mountains of Christmas', cursive !important;
-            font-size: 2.5rem !important;
-            color: #FFFFFF !important; /* White labels */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 0px #1A3C23; /* Dark shadow for legibility */
             margin-bottom: 0.5rem !important;
         }
 
