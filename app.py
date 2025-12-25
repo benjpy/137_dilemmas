@@ -56,6 +56,15 @@ def load_css():
             margin-bottom: 0 !important;
         }
         
+        h2, h3 {
+            font-family: 'Mountains of Christmas', cursive !important;
+            color: #D42426 !important;
+            font-size: 3.5rem !important;
+            text-shadow: 2px 2px 0px #F1D570;
+            margin-bottom: 1rem !important;
+            text-align: center;
+        }
+        
         .subtitle {
             font-family: 'Roboto', sans-serif;
             color: #2F5233;
