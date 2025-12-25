@@ -67,19 +67,23 @@ def load_css():
 
         /* Inputs */
         div[data-baseweb="input"] {
-            border-radius: 10px !important;
-            border: 2px solid #2F5233 !important;
+            border-radius: 12px !important;
+            border: 2px solid #F1D570 !important;
             background-color: #fff !important;
         }
         div[data-baseweb="input"] input {
             font-family: 'Mountains of Christmas', cursive !important;
-            font-size: 1.8rem !important;
-            color: #D42426 !important;
+            font-size: 2.2rem !important;
+            color: #1A3C23 !important; /* Dark Green Text */
+            caret-color: #D42426;
         }
-        label {
+        /* Target labels specifically for Streamlit inputs */
+        .stTextInput label, .stTextInput p {
             font-family: 'Mountains of Christmas', cursive !important;
-            font-size: 2rem !important;
-            color: #2F5233 !important;
+            font-size: 2.5rem !important;
+            color: #FFFFFF !important; /* White labels */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 0.5rem !important;
         }
 
         /* Custom Buttons */
